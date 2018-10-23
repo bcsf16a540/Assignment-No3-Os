@@ -8,7 +8,7 @@ void *Addition(void *arg){
 
 	int start=(int)arg;
 	int sum=0;
-	for(int i=start;i=start+chunksize;i++)
+	for(int i=start;i<start+chunksize;i++)
 		sum=sum+array[i];
 
 	return ((void*) sum);
